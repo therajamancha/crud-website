@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Form</title>
+    <!-- fontAwsome -->
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css">
+    <!-- my style css -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- form section -->
+    <section class="user-profile-sec">
+        <div class="container">
+            <div class="user-form">
+                <div class="section-title">
+                    <h2>FORM</h2>
+                </div>
+                <!-- user Form -->
+                <div class="form-row">
+                    <!-- first name -->
+                    <div class="form-half-col">
+                        <label for="fname" class="form-label">First Name :</label>
+                        <input type="text" name="fname" id="fname" class="form-control" placeholder="Enter First Name" autocomplete="off">
+                    </div>
+                    <!-- last name -->
+                    <div class="form-half-col">
+                        <label for="lname" class="form-label">Last Name :</label>
+                        <input type="text" name="lname" id="lname" class="form-control" placeholder="Enter Last Name" autocomplete="off">
+                    </div>
+                    <!-- date of birht -->
+                    <div class="form-half-col">
+                        <label for="dob" class="form-label">Enter Birth Date :</label>
+                        <input type="date" name="dob" id="dob" class="form-control">
+                    </div>
+                    <!-- address -->
+                    <div class="form-half-col">
+                        <label for="address" class="form-label">Address :</label>
+                        <input type="text" name="address" id="address" class="form-control" placeholder="Enter Your Address">
+                    </div>
+                    <!-- area -->
+                    <div class="form-half-col">
+                        <label for="area" class="form-label">Area :</label>
+                        <input type="text" name="area" id="area" class="form-control" placeholder="Enter Near Street">
+                    </div>
+                    <!-- pincode -->
+                    <div class="form-half-col">
+                        <label for="pincode" class="form-label">Pincode :</label>
+                        <input type="number" name="pincode" id="pincode" class="form-control" placeholder="Enter Pincode" maxlength="6">
+                    </div>
+                    <!-- country -->
+                    <div class="form-half-col">
+                        <label for="country" class="form-label">Enter Country :</label>
+                        <select name="country" id="country" class="form-control" required>
+                            <option value="">Enter Country</option>
+                        </select>
+                    </div>
+                    <!-- state -->
+                    <div class="form-half-col">
+                        <label for="state" class="form-label">Enter State :</label>
+                        <select name="state" id="state" class="form-control">
+                            <option value="">Enter State</option>
+                        </select>
+                    </div>
+                    <!-- city -->
+                    <div class="form-half-col">
+                        <label for="city" class="form-label">Enter City :</label>
+                        <select name="city" id="city" class="form-control">
+                            <option value="">Enter City</option>
+                        </select>
+                    </div>
+                    <!-- Gender -->
+                    <div class="form-half-col">
+                        <label for="gender" class="form-label">Gender :</label>
+                        <div class="form-check">
+                            <input type="radio" name="gender" id="male" value="male">
+                            <label for="male" >Male</label>
+                            <input type="radio" name="gender" id="female" value="female">
+                            <label for="female">Female</label>
+                            <input type="radio" name="gender" id="other" value="other">
+                            <label for="other">Other</label>
+                        </div>
+                    </div>
+                    <!-- maretial status -->
+                    <div class="form-half-col">
+                        <div class="form-check">
+                            <input type="checkbox" name="married" id="married" >
+                            <label for="married" >is Married</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-half-col">
+                        <div class="form-btn-gruop">
+                            <button id="selectall" class="btn btn-info">Select All</button>
+                            <button id="deselctall" class="btn btn-info">Deselect All</button>
+                            <button id="deleteall" class="btn btn-danger" onclick="deletSelected()">Delete</button>
+                        </div>
+                    </div>
+                    <div class="form-half-col">
+                        <div class="form-btn-gruop">
+                            <button id="editBtn" class="btn btn-prime">Edit</button>
+                            <button id="submitBtn" class="btn btn-prime">Submit</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- user Table -->
+                <div class="user-table-wrap">
+                    <table class="user-table">
+                        <thead>
+                            <tr>
+                                <th>select</th>
+                                <!-- <th>No</th> -->
+                                <th>ID</th>
+                                <th>First Name</th>
+                                <th>Last Name</th>
+                                <th>Date of Birth</th>
+                                <th>Address</th>
+                                <th>Gender</th>
+                                <th>Merried</th>
+                                <th>Edit / Delete</th>
+                            </tr>
+                        </thead>
+                        <tbody></tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- my script -->
+    <script src="js/task6.js"></script>
+</body>
+</html>

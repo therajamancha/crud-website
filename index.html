@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Website</title>
+    <link rel="shortcut icon" href="./img/unnamed.jpg" type="image/x-icon">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css">
+    <!-- my style  -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!---====================== SIDE NAVIGATION STARTE ======================-->
+    <aside class="portfolio-aside">
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#formsec">Crud Form</a></li>
+                <li><a href="#tabledata">Table Data</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#service">Services</a></li>
+                <li><a href="#gallery">Gallery</a></li>
+                <li><a href="#contect">Contact us</a></li>
+                <li><a href="#" id="logout">log Out</a></li>
+            </ul>
+        </nav>
+    </aside>
+    <div class="main-page-wrapper">
+        <!---====================== HEADER STARTE ======================-->
+        <header class="portfolio-header header-style-one">
+            <div class="container">
+                <div class="ph-wraper">
+                    <div class="main-logo">
+                        <a href="#home">
+                            <h3>Raj</h3>
+                        </a>
+                    </div>
+                    <div class="user-wrap">
+                        <div id="user-info"></div>
+                        <div class="mobile-only">
+                            <a href="#" class="mobile-menu">
+                                <img src="./img/menu.png" alt="menu">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!---====================== MAIN STARTED ======================-->
+        <main class="home-page">
+            <!---====================== HERO SECTION STARTED ======================-->
+            <section class="hero-section section-padding" id="home">
+                <div class="container">
+                    <div class="hero-title-wraper">
+                        <h1>Lorem ipsum dolor sit amet.</h1>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis possimus corporis vero eaque labore blanditiis.</p>
+                        <div class="hero-btn">
+                            <a href="#" class="btn btn-prime">Learn more</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!---====================== Form SECTION STARTED ======================-->
+            <section class="user-profile-sec section-padding" id="formsec">
+                <div class="container">
+                    <div class="user-form">
+                        <div class="section-title">
+                            <h2>Form</h2>
+                        </div>
+                        <!-- user Form -->
+                        <div class="form-row">
+                            <!-- first name -->
+                            <div class="form-half-col">
+                                <label for="fname" class="form-label">First Name :</label>
+                                <input type="text" name="fname" id="fname" class="form-control" placeholder="Enter First Name" autocomplete="off">
+                            </div>
+                            <!-- last name -->
+                            <div class="form-half-col">
+                                <label for="lname" class="form-label">Last Name :</label>
+                                <input type="text" name="lname" id="lname" class="form-control" placeholder="Enter Last Name" autocomplete="off">
+                            </div>
+                            <!-- date of birht -->
+                            <div class="form-half-col">
+                                <label for="dob" class="form-label">Enter Birth Date :</label>
+                                <input type="date" name="dob" id="dob" class="form-control">
+                            </div>
+                            <!-- address -->
+                            <div class="form-half-col">
+                                <label for="address" class="form-label">Address :</label>
+                                <input type="text" name="address" id="address" class="form-control" placeholder="Enter Your Address">
+                            </div>
+                            <!-- area -->
+                            <div class="form-half-col">
+                                <label for="area" class="form-label">Area :</label>
+                                <input type="text" name="area" id="area" class="form-control" placeholder="Enter Near Street">
+                            </div>
+                            <!-- pincode -->
+                            <div class="form-half-col">
+                                <label for="pincode" class="form-label">Pincode :</label>
+                                <input type="number" name="pincode" id="pincode" class="form-control" placeholder="Enter Pincode" maxlength="6">
+                            </div>
+                            <!-- country -->
+                            <div class="form-half-col">
+                                <label for="country" class="form-label">Enter Country :</label>
+                                <select name="country" id="country" class="form-control" required>
+                                    <option value="">Enter Country</option>
+                                </select>
+                            </div>
+                            <!-- state -->
+                            <div class="form-half-col">
+                                <label for="state" class="form-label">Enter State :</label>
+                                <select name="state" id="state" class="form-control">
+                                    <option value="">Enter State</option>
+                                </select>
+                            </div>
+                            <!-- city -->
+                            <div class="form-half-col">
+                                <label for="city" class="form-label">Enter City :</label>
+                                <select name="city" id="city" class="form-control">
+                                    <option value="">Enter City</option>
+                                </select>
+                            </div>
+                            <!-- Gender -->
+                            <div class="form-half-col">
+                                <label for="gender" class="form-label">Gender :</label>
+                                <div class="form-check">
+                                    <input type="radio" name="gender" id="male" value="male">
+                                    <label for="male" >Male</label>
+                                    <input type="radio" name="gender" id="female" value="female">
+                                    <label for="female">Female</label>
+                                    <input type="radio" name="gender" id="other" value="other">
+                                    <label for="other">Other</label>
+                                </div>
+                            </div>
+                            <!-- maretial status -->
+                            <div class="form-half-col">
+                                <div class="form-check">
+                                    <input type="checkbox" name="married" id="married" >
+                                    <label for="married" >is Married</label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-half-col">
+                                <div class="form-btn-gruop">
+                                    <button id="selectall" class="btn btn-info">Select All</button>
+                                    <button id="deselctall" class="btn btn-info">Deselect All</button>
+                                    <button id="deleteall" class="btn btn-danger" onclick="deletSelected()">Delete</button>
+                                </div>
+                            </div>
+                            <div class="form-half-col">
+                                <div class="form-btn-gruop">
+                                    <button id="editBtn" class="btn btn-prime">Edit</button>
+                                    <button id="submitBtn" class="btn btn-prime">Submit</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!---====================== ABOUT SECTION STARTED ======================-->
+            <section class="user-tabledata-sec section-padding" id="tabledata">
+                <div class="container">
+                    <!-- user Table -->
+                    <div class="section-title">
+                        <h2>Table Data</h2>
+                    </div>
+                    <div class="user-table-wrap">
+                        <table class="user-table">
+                            <thead>
+                                <tr>
+                                    <th>select</th>
+                                    <!-- <th>No</th> -->
+                                    <th>ID</th>
+                                    <th>First Name</th>
+                                    <th>Last Name</th>
+                                    <th>Date of Birth</th>
+                                    <th>Address</th>
+                                    <th>Gender</th>
+                                    <th>Merried</th>
+                                    <th>Edit / Delete</th>
+                                </tr>
+                            </thead>
+                            <tbody></tbody>
+                        </table>
+                    </div>
+                </div>
+            </section>
+            <!---====================== ABOUT SECTION STARTED ======================-->
+            <section class="about-section section-padding" id="about">
+                <div class="container">
+                    <div class="about-wrapper">
+                        <div class="section-title">
+                            <h2>About us</h2>
+                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolores in quaerat mollitia nobis quam quod laborum labore modi laudantium consequatur pariatur asperiores tempore quo voluptatum incidunt commodi impedit, fuga accusantium?</p>
+                        </div>
+                    </div>
+                   <div class="row">
+                        <div class="col-two">
+                            <div class="about-img-wrap">
+                                <img src="./img/about.jpg" alt="About us">
+                            </div>
+                        </div>
+                        <div class="col-two">
+                            <div class="about-content">
+                                <h3></h3>
+                                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quas impedit saepe adipisci at eius neque nostrum minus id incidunt natus deserunt quisquam ea consequuntur optio pariatur quidem, ratione fugiat eos voluptatem iste sapiente quam accusamus molestiae quia! Sit, soluta. Fugiat nemo ducimus cumque unde, eaque 
+                                </p>
+                                <p>obcaecati rerum. Illum reprehenderit vitae consequatur delectus maxime, consectetur molestiae doloribus nam earum voluptatem. Labore facilis doloribus deserunt voluptatem blanditiis, delectus itaque eum natus culpa aliquid libero tempora, consequatur illo ullam eveniet rerum hic saepe?</p>
+                                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quas impedit saepe adipisci at eius neque nostrum minus id incidunt natus deserunt quisquam ea consequuntur optio pariatur quidem, ratione fugiat eos voluptatem iste sapiente quam accusamus molestiae quia! Sit, soluta. Fugiat nemo ducimus cumque unde, eaque 
+                                </p>
+                                <div class="about-btn">
+                                    <a href="#" class="btn btn-prime">Learn more</a>
+                                </div>
+                            </div>
+                        </div>
+                   </div> 
+                </div>
+            </section>
+             <!---====================== ABOUT SECTION STARTED ======================-->
+             <section class="services-section section-padding" id="service">
+                 <div class="container">
+                    <div class="service-wraper">
+                        <div class="section-title">
+                            <h2>Services</h2>
+                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolores in quaerat mollitia nobis quam quod laborum labore modi laudantium consequatur pariatur asperiores tempore quo voluptatum incidunt commodi impedit, fuga accusantium?</p>
+                        </div>
+                        <div class="row">
+                            <div class="col-three">
+                                <div class="serv-card">
+                                    <div class="serv-img">
+                                        <img src="./img/webiste.png" alt="Service">
+                                    </div>
+                                    <div class="serv-content">
+                                        <h4>Lorem, ipsum dolor.</h4>
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam sed incidunt, ipsam nostrum ipsum exercitationem..</p>
+                                        <div class="serv-btn">
+                                            <a href="#" class="btn btn-prime">Learn more</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-three">
+                                <div class="serv-card">
+                                    <div class="serv-img">
+                                        <img src="./img/webiste.png" alt="Service">
+                                    </div>
+                                    <div class="serv-content">
+                                        <h4>Lorem, ipsum dolor.</h4>
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam sed incidunt, ipsam nostrum ipsum exercitationem..</p>
+                                        <div class="serv-btn">
+                                            <a href="#" class="btn btn-prime">Learn more</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-three">
+                                <div class="serv-card">
+                                    <div class="serv-img">
+                                        <img src="./img/webiste.png" alt="Service">
+                                    </div>
+                                    <div class="serv-content">
+                                        <h4>Lorem, ipsum dolor.</h4>
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam sed incidunt, ipsam nostrum ipsum exercitationem..</p>
+                                        <div class="serv-btn">
+                                            <a href="#" class="btn btn-prime">Learn more</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                        </div>
+                    </div>
+                 </div>
+             </section>
+             <!---====================== GALLERY SECTION STARTED ======================-->
+             <section class="gallery-section section-padding" id="gallery">
+                <div class="container">
+                   <div class="gallery-wrapper">
+                        <div class="section-title">
+                            <h2>Gallery</h2>
+                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolores in quaerat mollitia nobis quam quod laborum labore modi laudantium consequatur pariatur asperiores tempore quo voluptatum incidunt commodi impedit, fuga accusantium?</p>
+                        </div>
+                        <div class="row">
+                            <div class="col-three">
+                                <div class="gallery-img-wrapper">
+                                    <img src="./img/gallery.jpg" alt="gallery-image">
+                                </div>
+                            </div>
+                            <div class="col-three">
+                                <div class="gallery-img-wrapper">
+                                    <img src="./img/gallery.jpg" alt="gallery-image">
+                                </div>
+                            </div>
+                            <div class="col-three">
+                                <div class="gallery-img-wrapper">
+                                    <img src="./img/gallery.jpg" alt="gallery-image">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-three">
+                                <div class="gallery-img-wrapper">
+                                    <img src="./img/gallery.jpg" alt="gallery-image">
+                                </div>
+                            </div>
+                            <div class="col-three">
+                                <div class="gallery-img-wrapper">
+                                    <img src="./img/gallery.jpg" alt="gallery-image">
+                                </div>
+                            </div>
+                            <div class="col-three">
+                                <div class="gallery-img-wrapper">
+                                    <img src="./img/gallery.jpg" alt="gallery-image">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="gallery-btn text-center">
+                            <a href="#" class="btn btn-prime">Learn more</a>
+                        </div>
+                   </div>
+                </div>
+            </section>
+            <!---====================== CONTACT US SECTION STARTED ======================-->
+            <section class="contact-section section-padding" id="contect">
+                <div class="container">
+                   <div class="contact-wrapper">
+                        <div class="section-title">
+                            <h2>Contact Us</h2>
+                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolores in quaerat mollitia nobis quam quod laborum labore modi laudantium consequatur pariatur asperiores tempore quo voluptatum incidunt commodi impedit, fuga accusantium?</p>
+                        </div>
+                        <form autocomplete="off">
+                           <div class="form-row">
+                                <div class="form-half-col">
+                                    <label for="fname" class="form-label">First Name :</label>
+                                    <input type="text" name="fname" id="fname" placeholder="Enter First Name" class="form-control">
+                                </div>
+                                <div class="form-half-col">
+                                    <label for="lname" class="form-label">Last Name :</label>
+                                    <input type="text" name="lname" id="lname" placeholder="Enter Last Name" class="form-control">
+                                </div>
+                                <div class="form-half-col">
+                                    <label for="mobile" class="form-label">Mobile :</label>
+                                    <input type="tell" name="mobile" id="mobile" placeholder="Enter Mobile No." class="form-control">
+                                </div>
+                                <div class="form-half-col">
+                                    <label for="email" class="form-label">Email :</label>
+                                    <input type="email" name="email" id="email" placeholder="Enter Email Address" class="form-control">
+                                </div>
+                                <div class="form-full-col">
+                                    <label for="msg" class="form-label">Massage :</label>
+                                    <textarea name="" id="msg" name="msg" cols="30" rows="10" placeholder="Enter Massage" class="form-control"></textarea>
+                                </div>
+                            </div>
+                            <div class="form-btn">
+                                <input type="submit" class="btn btn-prime">
+                            </div>
+                        </form>
+                   </div>
+                </div>
+            </section>
+        </main>
+        <!---====================== FOOTER STARTED ======================-->
+        <footer class="portfolio-footer footer-style-one">
+            <div class="container">
+                <p>© copyright all rights reserved 2015 2022</p>
+            </div>
+        </footer>
+    </div>
+    <!---====================== MY SCRIPT ======================-->
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/task6.js"></script>
+    <!---====================== MY SCRIPT ======================-->
+</body>
+</html>
