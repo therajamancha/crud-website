@@ -456,7 +456,7 @@ window.onload = () => {
 
 setTimeout(function(){
     if(document.cookie.length == 0){
-        window.location.assign("http://127.0.0.1:5500/login.html");
+        window.location.assign("https://therajamancha.github.io/crud-website//login.html");
         // window.location.assign("https://rajamanchacrud.netlify.app/login.html");
     }
 },500);

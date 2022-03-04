@@ -39,8 +39,7 @@ function craeteCookie(){
 }
 function redirectFun(){
     if(document.cookie != ""){
-      window.location.assign("http://127.0.0.1:5500/index.html");
-    //   window.location.assign("https://rajamanchacrud.netlify.app");
+      window.location.assign("https://therajamancha.github.io/crud-website/");
     }
 }
 loginBtn.onclick = function(){
